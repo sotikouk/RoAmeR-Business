@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="startBusiness" type="Bat" />
       <mapping ext="bin" type="Bat" />
     </extensionMap>
   </component>
