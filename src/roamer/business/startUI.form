@@ -37,7 +37,27 @@
           <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <model/>
+          <enabled value="true"/>
+          <foreground color="-4473925"/>
+          <model>
+            <item value="Φαρμακείο-Καλυντικά"/>
+            <item value="Ηλεκτρικά-Ηλεκτρονικά Είδη"/>
+            <item value="Κινητή Τηλεφωνία"/>
+            <item value="Ενδύματα Γυναικεία-Αξεσουάρ"/>
+            <item value="Ενδύματα Αντρικά"/>
+            <item value="Ενδύματα Παιδικά"/>
+            <item value="Εμπορικό Κατάστημα Ενδυμάτων"/>
+            <item value="Λευκά Είδη"/>
+            <item value="Κατάστημα Υποδυμάτων"/>
+            <item value="Καφέ-Τυρόπιτα"/>
+            <item value="Αρτοποιείο-Ζαχαροπλαστείο"/>
+            <item value="Εστιατόριο-fastfood"/>
+            <item value="Εμπόριο Τροφίμων-SuperMarket"/>
+            <item value="Βιβλιοπωλείο-Παιχνίδια"/>
+            <item value="Κοσμηματοπωλείο"/>
+            <item value="Είδη Δώρων"/>
+            <item value="Είδη Σπιτιού-Διακόσμησης"/>
+          </model>
         </properties>
       </component>
       <component id="6903e" class="javax.swing.JLabel">

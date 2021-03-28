@@ -27,19 +27,19 @@ public class startUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String name = businessName.getText().trim();
-                double lon = Double.parseDouble(longitude.getText().trim());
-                double lat = Double.parseDouble(latitude.getText().trim());
-                double alt = Double.parseDouble(altitude.getText().trim());
+                String kind = (String) businessKind.getItemAt(businessKind.getSelectedIndex());
+                String lon = longitude.getText().trim();
+                String lat = latitude.getText().trim();
+                String alt = altitude.getText().trim();
 
+                String arg[] = {lon, lat, alt, kind};
                 try {
-                    MicroRuntime.startAgent(name, "roamer.business.businessAgent", null);
+                    MicroRuntime.startAgent(name, "roamer.business.businessAgent", arg);
+
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
                 dispose();
-// TODO: 21/11/2020 να περάσω την τοποθεσία της περιοχής στον πράκτορα της επιχείρησης
-                businessAgent.Location loc = new businessAgent.Location(lon, lat, alt);
-
             }
         });
     }
