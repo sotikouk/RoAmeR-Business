@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="Java">
+        <added pattern="jade.core.MicroRuntime.startAgent(name,className,args)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
