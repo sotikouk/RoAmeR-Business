@@ -155,12 +155,12 @@ public class businessAgent extends Agent {
         addBehaviour(new OneShotBehaviour() {
             @Override
             public void action() {
-            /*    DFAgentDescription template;
+                DFAgentDescription template;
                 template = new DFAgentDescription();
                 ServiceDescription sd = new ServiceDescription();
                 sd.setType("Roamer-client2b");
                 template.addServices(sd);
-                try {
+             /*   try {
                     DFAgentDescription[] result = DFService.search(myAgent, template);
                     System.out.println("Found the following client agents:");
                     clientAgents = new AID[result.length];
@@ -172,12 +172,12 @@ public class businessAgent extends Agent {
                     fe.printStackTrace();
                 }
 */
-                ACLMessage cfp = new ACLMessage(ACLMessage.CFP);
+                ACLMessage cfp = new ACLMessage(ACLMessage.INFORM);
                // for (int i = 0; i < clientAgents.length; ++i) {
                     cfp.addReceiver(ba.getAgent());
                 //}
-                cfp.setContent(coordinates[0] + "," + coordinates[1] + "," + coordinates[2] + "," + coordinates[3]);
-                cfp.setConversationId("business-inform");
+                cfp.setContent(coordinates[0] + ":" + coordinates[1] + ":" + coordinates[2] + ":" + coordinates[3]);
+                //cfp.setConversationId("business-inform");
                 myAgent.send(cfp);
             }
         });
